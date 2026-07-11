@@ -15,7 +15,7 @@ weight = float(input("What is your weight in pounds? "))
 goal_Weight = float(input("What is your goal weight in pounds? "))
 # Start Display
 print("="*30)
-print("       Fitness Report")
+print("        Fitness Report")
 print("="*30)
 print()
 print(f"Name: {name}")
