@@ -1,3 +1,8 @@
+#Day 2, Lesson 2
+#Fitness Calculator
+#Author John
+#Date: July 11, 2026
+#Description: This program will calculate your BMI and how many weeks it will take to reach your goal weight.
 Name = input("What is your name? ")
 Height = float(input("What is your height in inches? "))
 Weight = float(input("What is your weight in pounds? "))
