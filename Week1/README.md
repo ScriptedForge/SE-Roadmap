@@ -1,6 +1,6 @@
 # Learning Python, Project 1 - Fitness Calculator and Check in.
 
-# Fitenss Calculator
+# Fitness Calculator
 - Learning general design layout
 - Using inputs, F-strings, variables and calculations
 
