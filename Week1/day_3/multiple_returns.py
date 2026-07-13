@@ -41,3 +41,4 @@ print(answer)
 
 # Because rectangle is established in the function, it will not display as the "answer = rectangle(10, 5)"
 #prediction: im asking it to print answer, which is redefined by the function. which may give the same answer of area and perimeter separately?
+##the answer is derrived from the return boundaries of "return area, perimeter" this structure results in the change of structure answer to (50, 30)
