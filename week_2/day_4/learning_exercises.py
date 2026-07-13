@@ -21,3 +21,16 @@ for number in range(5):
 #it should print num 1-5
 ##note - FIVE numbers were printed but starting at 0, range is characters not number
 
+
+print("challenge_4")
+for number in range(8):
+
+    if number == 2:
+        continue
+
+    if number == 6:
+        break
+
+    print(number)
+
+    ## it will skip number 2, and stop at number 6
