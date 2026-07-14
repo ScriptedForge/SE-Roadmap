@@ -1,17 +1,20 @@
-"""
----- Version 1 ----
-This is a small project for number guessing game
-I will store a secret number, user will guess the number
-    program will provide feedback if user is too low, too high and if they guessed correct
----- version 1.1 ----
-Adapted to no longer store a hard coded secret number.
-Secret number is imported
-User is required to select a difficulty, and a loop is created for invalid responses.
-"""
-
+'''
+This is going to be a reiteration of the number guessing game with the following requirements.
+    Generate a random number between 1 and 100.
+    Ask the user to guess.
+    If the guess is too high, say "Too high!"
+    If the guess is too low, say "Too low!"
+    If correct, congratulate the user.
+    Count how many guesses it took.
+    Allow the user to type "quit" at any time.
+    After a win, ask:
+        "Would you like to play again? (y/n)"
+'''
 #source ------------------------------------------
 
 import random
+
+
 
 #Introduction ------------------------------------
 print("="*30)
@@ -45,25 +48,47 @@ elif (difficulty) == (f"Medium"):
 elif (difficulty) == (f"Hard"):
     secret_number=random.randint(1,1000)
     print("I'm thinking of a number between 1 and 1000")
-print("Good Luck!")
+print()
+print("Good Luck!      q to quit")
+print()
+
 #number guessing --------------------------------
-guess = int(input("guess the number: "))
 guess_count = 1
-
-
-while (guess) != (secret_number):
-
-    if (guess) > (secret_number):
+while True:
+    guess = input("Guess the number: ")
+    if guess == "q":
+        print("---------")
+        print("Quitters never win!")
+        print()
+        print(f"The answer was {secret_number}!")
+        break
+    guess = int(guess)
+    if (guess) == (secret_number):
+        print("---------")
+        print("Correct!")
+        break
+    elif (guess) > (secret_number):
      print("too high!")
-
     elif (guess) < (secret_number):
         print("Too Low!")
-
-    guess = int(input("guess the number: "))
     guess_count += 1
 
+
+
 #results --------------------------------------
-print("---------")
-print(f"Correct! The answer was{secret_number}")
+
 print("---------")
 print(f"Guess Count: {guess_count}")
+print("---------")
+
+
+#Replay? --------------------------------------
+
+Play_Again = input(f"Would you like to play again? (y/n):")
+
+while (Play_Again) == "y":
+    print("Starting a new game...")
+    #need logic to repeat here
+    if (Play_Again) == "n":
+        break
+print("Thanks for playing!")
