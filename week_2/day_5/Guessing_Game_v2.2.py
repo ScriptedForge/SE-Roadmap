@@ -14,8 +14,6 @@ This is going to be a reiteration of the number guessing game with the following
 
 import random
 
-
-
 #Introduction ------------------------------------
 print("="*30)
 print("Welcome to Guess the Number!")
@@ -37,7 +35,6 @@ while (difficulty) not in ("Easy", "Medium", "Hard"):
     
 print("-"*30)
 print(f"you've selected: {difficulty}")
-
 
 if (difficulty) == (f"Easy"):
     secret_number=random.randint(1,25)
@@ -73,14 +70,11 @@ while True:
         print("Too Low!")
     guess_count += 1
 
-
-
 #results --------------------------------------
 
 print("---------")
 print(f"Guess Count: {guess_count}")
 print("---------")
-
 
 #Replay? --------------------------------------
 
