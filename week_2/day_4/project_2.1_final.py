@@ -64,6 +64,7 @@ while (guess) != (secret_number):
 
 #results --------------------------------------
 print("---------")
-print(f"Correct! The answer was{secret_number}")
+print(f"Correct! The answer was {secret_number}!")
 print("---------")
 print(f"Guess Count: {guess_count}")
+print("---------")

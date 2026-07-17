@@ -10,12 +10,10 @@ while count <= 5:
 
 print("question 2")
 
-
 while count <= 5:
     print(count)
 
 # Predicted Answer: infinite loop? no escape.. count will always be 1
-
 
 # Challenge 1 --------------------------
 count = 10
@@ -84,7 +82,6 @@ for number in range(1, 6):
 4
 5
 '''
-
 
 print("challenge_Bonus")
 #Challenge Bonus --------------------------
