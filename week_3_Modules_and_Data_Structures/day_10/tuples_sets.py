@@ -39,14 +39,15 @@ print(favorite_foods)
 
 print("challenge #5")
 inventory = {
-    "Sword",
-    "Shield",
-    "Potion"
+    "sword",
+    "shield",
+    "potion"
 }
 
-item = input("What item are you looking for? ")
+item = input("What item are you looking for? ").strip().lower()
 
 if item in inventory:
     print("Item found!")
 else:
     print("Item not found.")
+    
